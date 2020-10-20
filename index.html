@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>黑马面面</title>
+	<meta charset="utf-8">
+	<!-- 视口标签设置 -->
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<!-- 引入初始化样式 -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- 引入首页样式 -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- 引入swipe样式 -->
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+
+</head>
+<body>
+	<section class="top">
+		<!-- head区域制作 -->
+		<header>黑马面面</header>
+		<!-- nav区域制作 -->
+		<nav>
+			<a href="#" class="item">
+				<img src="icons/icon1.png">
+				<span>HR面试</span>
+			</a>
+			<a href="#" class="item">
+				<img src="icons/icon2.png">
+				<span>HR面试</span>
+			</a>
+			<a href="#" class="item">
+				<img src="icons/icon3.png">
+				<span>HR面试</span>
+			</a>
+			<a href="#" class="item">
+				<img src="icons/icon4.png">
+				<span>HR面试</span>
+			</a>
+			<a href="#" class="item">
+				<img src="icons/icon5.png">
+				<span>HR面试</span>
+			</a>
+			<a href="#" class="item">
+				<img src="icons/icon6.png">
+				<span>HR面试</span>
+			</a>
+		</nav>
+		<section class="go">
+			<img src="images/go.png" />
+		</section>
+	</section>
+	<!-- 就业指导模块制作 -->
+	<section class="content">
+		<div class="content_hd">
+			<h4><span class="icon"><img src="icons/i1.png"></span>就业指导</h4>
+			<a href="#">更多>></a>
+		</div>
+		<div class="content_bd">
+			<!-- Swiper -->
+			  <div class="swiper-container jiuye">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<a href="#"><img src="images/pic.png" /></a>
+			      	<p>老师教你应对面试技巧</p>
+
+			      </div>
+			      <div class="swiper-slide">
+			      	<a href="#"><img src="images/2.jpg" /></a>
+			      	<p>我是刘德华</p>
+
+			      </div>
+			      <div class="swiper-slide">
+			      	<a href="#"><img src="images/3.jpg" /></a>
+			      	<p>刘德华就是我</p>
+
+			      </div>
+			      
+			    </div>
+			    
+			  </div>
+			  <!-- Add Arrows -->
+				  <div class="swiper-button-next"></div>
+				  <div class="swiper-button-prev"></div>
+		</div>
+	</section>
+	<!-- 充电学习模块制作 -->
+		<section class="content second_content">
+		<div class="content_hd">
+			<h4><span class="icon"><img src="icons/i2.png"></span>充电学习</h4>
+			<a href="#">更多>></a>
+		</div>
+		<div class="content_study">
+			<!-- Swiper -->
+			  <div class="swiper-container study">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<img src="images/pic1.png">
+			      	<h5>学地道英语，活出完美人生！</h5>
+			      	<p>已有<span>153人</span>打卡学习</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="images/pic2.png">
+			      	<h5>后端java开发，做编程大佬</h5>
+			      	<p>已有<span>253人</span>打卡学习</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="images/pic1.png">
+			      	<h5>学地道英语，活出完美人生！</h5>
+			      	<p>已有<span>153人</span>打卡学习</p>
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="images/pic2.png">
+			      	<h5>学地道英语，活出完美人生！</h5>
+			      	<p>已有<span>153人</span>打卡学习</p>
+			      </div>
+			     
+			    </div>
+			  </div>
+		</div>
+	</section>
+	<!-- 页面尾部制作 -->
+	<footer class="footer">
+		<a href="#" class="item">
+			<img src="icons/home.png" />
+			<span>首页</span>
+		</a>
+		<a href="#" class="item">
+			<img src="icons/ms.png" />
+			<span>面试</span>
+		</a>
+		<a href="#" class="item">
+			<img src="icons/net.png" />
+			<span>技术</span>
+		</a>
+		<a href="#" class="item">
+			<img src="icons/user.png" />
+			<span>我的主页</span>
+		</a>
+	</footer>
+	
+	<!-- 引入flexible.js文件 -->
+	<script src="js/index.js"></script>
+	<!-- 引入swipe js文件 -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Initialize Swiper -->
+	  <script>
+	  	// 第一个函数是就业指导轮播图
+	  (function () {
+	  	var swiper = new Swiper('.jiuye', {
+	      // 当前页面显示几个轮播图，可以是小数
+	      slidesPerView: 2,
+	      spaceBetween: 30,
+		  centeredSlides: true,
+		  loop: true,
+		  navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+	  })();
+	  // 第二个函数是充电学习轮播图
+	  (function () {
+	    var swiper = new Swiper('.study', {
+	      slidesPerView: 2.3,
+	      spaceBetween: 20,
+	    });
+	  })();
+	    
+	  </script>
+</body>
+</html>
